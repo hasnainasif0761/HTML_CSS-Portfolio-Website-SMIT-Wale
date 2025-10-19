@@ -1,0 +1,417 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+::selection {
+    color: orange;
+}
+
+/* body
+{
+    background: #000;
+} */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    padding-right: 30px;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+/* And Use Child Selector and denote this symbol is '>'  */
+#logo>img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+#logo>span {
+    font-size: 24px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+ul>li>a {
+    text-decoration: none;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+/* I use DESCENDENT Selector  */
+ul li a:hover {
+    background: #e7e7e8;
+    color: #9929fb;
+}
+
+/* Hero Section Start */
+.hero-main {
+    width: 100%;
+    height: 88vh;
+    /* border: 1px solid red; */
+    display: flex;
+    margin-top: 70px;
+}
+
+.left-hero {
+    width: 51%;
+    height: inherit;
+    /* border:1px solid rgb(7, 206, 53); */
+    padding: 100px 30px;
+}
+
+.left-hero>h1 {
+    font-size: 45px;
+    line-height: 1.2em;
+    margin-bottom: 20px;
+}
+
+.right-hero {
+    width: 49%;
+    height: inherit;
+    /* border:1px solid rgb(9, 212, 19); */
+    padding: 30px 30px;
+    padding-top: 40px;
+    padding-left: 100px;
+}
+
+.right-hero img {
+    height: 95%;
+    margin-left: 30px;
+    border-radius: 10px;
+}
+
+.hero-img {
+    width: 65%;
+    height: 75vh;
+    /* border: 1px solid red; */
+    padding-top: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px #e7e7e8;
+}
+
+.left-hero button {
+    width: 100px;
+    height: 45px;
+    background: #9929fb;
+    border: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: white;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.left-hero button:hover {
+    background: transparent;
+    border: 2px solid #9929fb;
+    color: black;
+}
+
+.same-main {
+    display: flex;
+    margin-top: 20px;
+    gap: 5px;
+}
+
+.same {
+    width: 35%;
+    height: 100px;
+    background: #e7cff8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-about {
+    width: 100%;
+    height: 100vh;
+    /* background: bisque; */
+    padding-top: 5.5%;
+    display: flex;
+}
+
+.about-left {
+    width: 45%;
+    height: 88vh;
+    /* border: 1px solid red; */
+    padding-top: 30px;
+    /* padding-left: 100px; */
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+}
+
+.about-img {
+    width: 49%;
+    height: 70vh;
+    box-shadow: 0 0 10px #b3b3b3;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.about-img img {
+    width: 250px;
+    border-radius: 10px;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+.about-right {
+    width: 55%;
+    height: 88vh;
+    /* border: 1px solid red; */
+    padding-top: 110px;
+    padding-left: 20px;
+}
+
+.about-right>h1 {
+    line-height: 1.2em;
+    margin-bottom: 30px;
+}
+
+.about-right>p {
+    margin-bottom: 10px;
+    color: hsl(210, 2%, 57%);
+}
+
+.about-btn {
+    background: #9929fb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.abn {
+    background: transparent;
+    border: 1.5px solid black;
+    color: black;
+}
+
+.abn:hover {
+    border: 1.5px solid #9929fb;
+    color: #9929fb;
+}
+
+/* Skills Section Css */
+.main-skill {
+    width: 100%;
+    height: 100vh;
+    /* background: violet; */
+    padding-top: 70px;
+}
+
+.main-skill>h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.main-skill p {
+    text-align: center;
+    color: hsl(210, 2%, 57%);
+}
+
+.skill-container {
+    width: 85%;
+    height: 50vh;
+    /* border: 1px solid #e7cff8; */
+    margin: auto;
+    display: flex;
+    margin-top: 55px;
+    gap: 40px;
+}
+
+.skill {
+    width: 30%;
+    height: 50vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #cd97d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill>img {
+    width: 76%;
+}
+
+.project-main {
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid red; */
+    padding-top: 70px;
+}
+
+.project-main h1 {
+    text-align: center;
+}
+
+.card {
+    width: 100%;
+    height: 55vh;
+    /* border: 1px solid #b3b3b3; */
+    margin-top: 80px;
+    display: flex;
+    gap: 10px;
+}
+
+.main-card {
+    width: 30%;
+    height: 55vh;
+    /* border: 1px solid red; */
+    box-shadow: 0 0 10px #e7cff8;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-top {
+    width: 100%;
+    height: 26vh;
+    background-image: url(./image/CV.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 1px solid #b3b3b3;
+}
+
+.card-bottom {
+    width: 100%;
+    height: 29vh;
+    /* background: #9929fb; */
+    padding: 10px;
+}
+
+.card-bottom h2 {
+    color: #9929fb;
+}
+
+.card-bottom p {
+    color: black;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+
+.carded-top {
+    width: 100%;
+    height: 26vh;
+    background-image: url(./image/website-structure.png );
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 1px solid #b3b3b3;
+}
+
+.contact-main {
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid red; */
+    padding-top: 80px;
+}
+
+.contact {
+    width: 85%;
+    height: 75vh;
+    /* border: 1px solid red; */
+    margin: auto;
+    display: flex;
+}
+
+.left-contact {
+    width: 50%;
+    height: 75vh;
+    /* border: 1px solid red; */
+    padding-top: 50px;
+}
+
+.left-contact p {
+    color: hsl(210, 2%, 57%);
+    margin-bottom: 30px;
+}
+
+.right-contact {
+    width: 50%;
+    height: 75vh;
+    /* border: 1px solid red; */
+    padding-top: 40px;
+}
+
+.right-contact .input {
+    width: 90%;
+    padding: 10px 0px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #000;
+}
+
+.right-contact input:focus {
+    border-bottom: 2px solid #9929fb;
+}
+
+.right-contact input:focus::placeholder {
+    color: #9929fb;
+}
+
+.right-contact #input {
+    width: 30%;
+    padding: 10px 0px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #000;
+}
+.right-contact #input:focus {
+    border-bottom: 2px solid #9929fb;
+}
+.footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+    /* border: 1px solid red; */
+}
+.main-footer
+{
+    width: 100%;
+    height: 30vh;
+    background: #293649;
+    padding-top: 40px;
+}
+.footer-nav
+{
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    margin-left: 20px;
+    color: #b3b3b3;
+}
