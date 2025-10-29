@@ -11,11 +11,6 @@
 ::selection {
     color: orange;
 }
-
-/* body
-{
-    background: #000;
-} */
 .navbar {
     display: flex;
     align-items: center;
